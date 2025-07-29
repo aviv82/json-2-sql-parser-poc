@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.ServiceConnectController",
+    "Method": "GetAslDocumentBySerialNumber",
+    "RelativePath": "api/ServiceConnect/GetAslDocumentBySerialNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serialNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.ServiceConnectController",
+    "Method": "GetMachineBySerialNumber",
+    "RelativePath": "api/ServiceConnect/GetMachineBySerialNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serialNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.ServiceConnectController",
+    "Method": "GetProductDefinitionsBySerialNumber",
+    "RelativePath": "api/ServiceConnect/GetProductDefinitionsBySerialNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serialNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.ServiceConnectController",
+    "Method": "GetHealth",
+    "RelativePath": "api/ServiceConnect/Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.TridionDocsController",
+    "Method": "GetHealth",
+    "RelativePath": "api/TridionDocs/Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.TridionDocsController",
+    "Method": "GetListOfValues",
+    "RelativePath": "api/TridionDocs/ListOfValues",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.TridionDocsController",
+    "Method": "GetPublications",
+    "RelativePath": "api/TridionDocs/Publications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "json_2_sql_parser_poc.Models.TridionDocs.Requests.PublicationsByLogicalIdRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "json_2_sql_parser_poc.Controllers.TridionDocsController",
+    "Method": "GetVersion",
+    "RelativePath": "api/TridionDocs/Version",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

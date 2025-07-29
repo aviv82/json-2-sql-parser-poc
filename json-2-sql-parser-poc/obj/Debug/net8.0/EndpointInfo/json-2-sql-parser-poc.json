@@ -1,0 +1,259 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "json-2-sql-parser-poc",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/ServiceConnect/Health": {
+      "get": {
+        "tags": [
+          "ServiceConnect"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ServiceConnect/GetProductDefinitionsBySerialNumber": {
+      "get": {
+        "tags": [
+          "ServiceConnect"
+        ],
+        "parameters": [
+          {
+            "name": "serialNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ServiceConnect/GetMachineBySerialNumber": {
+      "get": {
+        "tags": [
+          "ServiceConnect"
+        ],
+        "parameters": [
+          {
+            "name": "serialNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ServiceConnect/GetAslDocumentBySerialNumber": {
+      "get": {
+        "tags": [
+          "ServiceConnect"
+        ],
+        "parameters": [
+          {
+            "name": "serialNumber",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TridionDocs/Health": {
+      "get": {
+        "tags": [
+          "TridionDocs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TridionDocs/ListOfValues": {
+      "get": {
+        "tags": [
+          "TridionDocs"
+        ],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ListOfValuesEnum"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TridionDocs/Version": {
+      "get": {
+        "tags": [
+          "TridionDocs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TridionDocs/Publications": {
+      "post": {
+        "tags": [
+          "TridionDocs"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublicationsByLogicalIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublicationsByLogicalIdRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublicationsByLogicalIdRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FieldGroupEnum": {
+        "enum": [
+          "None",
+          "All",
+          "Basic",
+          "Descriptive",
+          "System"
+        ],
+        "type": "string"
+      },
+      "IshField": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "level": {
+            "$ref": "#/components/schemas/IshFieldLevelEnum"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IshFieldLevelEnum": {
+        "enum": [
+          "Language",
+          "Logical",
+          "Version"
+        ],
+        "type": "string"
+      },
+      "ListOfValuesEnum": {
+        "enum": [
+          "DATCLEGALENTITY",
+          "DATCMACHINECATEGORY"
+        ],
+        "type": "string"
+      },
+      "PublicationsByLogicalIdRequest": {
+        "type": "object",
+        "properties": {
+          "logicalIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "statusFilter": {
+            "$ref": "#/components/schemas/StatusFilterEnum"
+          },
+          "selectedProperties": {
+            "$ref": "#/components/schemas/SelectedPropertiesEnum"
+          },
+          "fieldGroup": {
+            "$ref": "#/components/schemas/FieldGroupEnum"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RequestField"
+            },
+            "nullable": true
+          },
+          "includeLinks": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequestField": {
+        "type": "object",
+        "properties": {
+          "ishField": {
+            "$ref": "#/components/schemas/IshField"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SelectedPropertiesEnum": {
+        "enum": [
+          "Id",
+          "TitleAndDescription"
+        ],
+        "type": "string"
+      },
+      "StatusFilterEnum": {
+        "enum": [
+          "All",
+          "AllReleased",
+          "DraftOrLatestReleased",
+          "LatestReleased"
+        ],
+        "type": "string"
+      }
+    }
+  }
+}
