@@ -1247,32 +1247,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a00559991\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/Aviv/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\aviv\\archive\\bs\\json-2-sql-parser-poc\\json-2-sql-parser-poc\\json-2-sql-parser-poc.csproj",
+      "projectUniqueName": "/Users/Aviv/Desktop/json-2-sql-parser-poc/json-2-sql-parser-poc/json-2-sql-parser-poc/json-2-sql-parser-poc.csproj",
       "projectName": "json-2-sql-parser-poc",
-      "projectPath": "C:\\aviv\\archive\\bs\\json-2-sql-parser-poc\\json-2-sql-parser-poc\\json-2-sql-parser-poc.csproj",
-      "packagesPath": "C:\\Users\\a00559991\\.nuget\\packages\\",
-      "outputPath": "C:\\aviv\\archive\\bs\\json-2-sql-parser-poc\\json-2-sql-parser-poc\\obj\\",
+      "projectPath": "/Users/Aviv/Desktop/json-2-sql-parser-poc/json-2-sql-parser-poc/json-2-sql-parser-poc/json-2-sql-parser-poc.csproj",
+      "packagesPath": "/Users/Aviv/.nuget/packages/",
+      "outputPath": "/Users/Aviv/Desktop/json-2-sql-parser-poc/json-2-sql-parser-poc/json-2-sql-parser-poc/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\a00559991\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Aviv/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1291,7 +1284,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1329,6 +1322,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.13, 8.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1337,7 +1344,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

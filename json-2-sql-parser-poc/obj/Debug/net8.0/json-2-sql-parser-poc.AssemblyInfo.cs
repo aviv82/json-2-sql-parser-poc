@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("json-2-sql-parser-poc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7422c84a285c2932aedf1a9abde95a372add7446")]
 [assembly: System.Reflection.AssemblyProductAttribute("json-2-sql-parser-poc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("json-2-sql-parser-poc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
